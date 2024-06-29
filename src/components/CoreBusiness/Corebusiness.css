@@ -1,0 +1,82 @@
+.coreBusinessSection {
+	padding: 20px 0;
+	background-color: #f9f9f9;
+	/* max-width: 1200px; */
+	border-radius: 8px;
+	margin: auto;
+}
+img.card-img-top {
+    object-fit: fill;
+    height: 328px;
+    width: 728px;
+}
+.card-link {
+	text-decoration: none;
+	color: inherit;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-link:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.image-container {
+	background-color: transparent;
+	padding: 10px;
+	overflow: hidden;
+	height: 285px; /* Set a fixed height for better responsiveness */
+	flex: 1 0 auto;
+}
+
+.card-img-top {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Changed to 'cover' to maintain aspect ratio */
+	transition: transform 0.3s ease-in;
+}
+
+.card-link:hover .card-img-top {
+	transform: scale(1.1);
+}
+
+.card-body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 20px; /* Add padding on left and right */
+}
+
+.card-body img {
+    width: 80px;
+    margin-right: 10px;
+    height: 41px;
+    object-fit: contain;
+}
+
+.card-body .col-9 {
+	padding-left: 0;
+}
+p.card-text {
+    margin-bottom: 0;
+    padding: 0;
+}
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+	.card-body {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.card-body img {
+		margin-bottom: 10px;
+	}
+
+	.image-container {
+		height: 150px;
+	}
+}
